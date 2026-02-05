@@ -3,9 +3,9 @@ int gcd();
 void main()
 {
     int a,b, p;
-    printf("Enter the Bigger Number ");
+    printf("Enter the First Number ");
     scanf("%d",&a);
-    printf("Enter the Smaller Number ");
+    printf("Enter the Second Number ");
     scanf("%d",&b);
     p = gcd(a,b);
     printf("GCD is %d",p);
@@ -13,7 +13,7 @@ void main()
 
 int gcd(int x, int y){
     if(y!=0)
-    return (y,x%y);
+        return gcd(y,x%y);
     else
-    return x;
+        return x;
 }
