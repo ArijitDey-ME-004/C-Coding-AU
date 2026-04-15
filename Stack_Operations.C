@@ -1,25 +1,19 @@
 #include <stdio.h>
-
 #define MAX 5
-
 // Stack structure
 struct stack {
     int arr[MAX];
     int top;
 };
-
 void main() {
     struct stack s;
     int choice, value, i;
-
     s.top = -1; // initialize stack
-
     while (1) {
         printf("\n--- STACK MENU ---\n");
         printf("1. Push\n2. Pop\n3. Display\n4. Exit\n");
         printf("Enter choice: ");
         scanf("%d", &choice);
-
         switch (choice) {
 
             case 1: // PUSH
